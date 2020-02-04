@@ -10,6 +10,7 @@ import (
 
 // main.go's init function is called last
 func init() {
+	log.Println("main.go - init_0")
 	pc, file, line, ok := runtime.Caller(0)
 	if ok {
 		log.Printf("[INIT] from %s, line #%d, func: %v\n",

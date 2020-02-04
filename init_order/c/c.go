@@ -6,6 +6,7 @@ import (
 )
 
 func init() {
+	log.Println("c.go - init_0")
 	pc, file, line, ok := runtime.Caller(0)
 	if ok {
 		log.Printf("[INIT] from %s, line #%d, func: %v\n",
